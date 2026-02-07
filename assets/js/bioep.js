@@ -22,7 +22,7 @@ window.bioEp = {
 	onPopup: null,
 	
 	// Object for handling cookies, taken from QuirksMode
-	// http://www.quirksmode.org/js/cookies.html
+	// https://www.quirksmode.org/js/cookies.html
 	cookieManager: {
 		// Create a cookie
 		create: function(name, value, days, sessionOnly) {

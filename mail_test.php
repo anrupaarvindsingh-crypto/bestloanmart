@@ -15,8 +15,8 @@ date_default_timezone_set('America/Phoenix');
 |  Software: PHPMailer - PHP email class                                    |
 |   Version: 5.1                                                            |
 |   Contact: via sourceforge.net support pages (also www.worxware.com)      |
-|      Info: http://phpmailer.sourceforge.net                               |
-|   Support: http://sourceforge.net/projects/phpmailer/                     |
+|      Info: https://phpmailer.sourceforge.net                               |
+|   Support: https://sourceforge.net/projects/phpmailer/                     |
 | ------------------------------------------------------------------------- |
 |     Admin: Andy Prevost (project admininistrator)                         |
 |   Authors: Andy Prevost (codeworxtech) codeworxtech@users.sourceforge.net |
@@ -26,7 +26,7 @@ date_default_timezone_set('America/Phoenix');
 | Copyright (c) 2001-2003, Brent R. Matzelle                                |
 | ------------------------------------------------------------------------- |
 |   License: Distributed under the Lesser General Public License (LGPL)     |
-|            http://www.gnu.org/copyleft/lesser.html                        |
+|            https://www.gnu.org/copyleft/lesser.html                        |
 | This program is distributed in the hope that it will be useful - WITHOUT  |
 | ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
 | FITNESS FOR A PARTICULAR PURPOSE.                                         |
@@ -46,7 +46,7 @@ date_default_timezone_set('America/Phoenix');
  * @author Marcus Bointon
  * @copyright 2004 - 2009 Andy Prevost
  * @version $Id: class.phpmailer.php 447 2009-05-25 01:36:38Z codeworxtech $
- * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license https://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
 
 if (version_compare(PHP_VERSION, '5.0.0', '<') ) exit("Sorry, this version of PHPMailer will only run on PHP version 5 or greater!\n");
@@ -526,7 +526,7 @@ class PHPMailer {
    * Static so it can be used without instantiation
    * Tries to use PHP built-in validator in the filter extension (from PHP 5.2), falls back to a reasonably competent regex validator
    * Conforms approximately to RFC2822
-   * @link http://www.hexillion.com/samples/#Regex Original pattern found here
+   * @link https://www.hexillion.com/samples/#Regex Original pattern found here
    * @param string $address The email address to check
    * @return boolean
    * @static
@@ -1603,7 +1603,7 @@ class PHPMailer {
   /**
    * Correctly encodes and wraps long multibyte strings for mail headers
    * without breaking lines within a character.
-   * Adapted from a function by paravoid at http://uk.php.net/manual/en/function.mb-encode-mimeheader.php
+   * Adapted from a function by paravoid at https://uk.php.net/manual/en/function.mb-encode-mimeheader.php
    * @access public
    * @param string $str multi-byte text to wrap encode
    * @return string
@@ -1724,7 +1724,7 @@ class PHPMailer {
 
   /**
    * Encode string to q encoding.
-   * @link http://tools.ietf.org/html/rfc2047
+   * @link https://tools.ietf.org/html/rfc2047
    * @param string $str the text to encode
    * @param string $position Where the text is going to be used, see the RFC for what that means
    * @access public
@@ -2351,7 +2351,7 @@ class phpmailerException extends Exception {
 | Copyright (c) 2001-2003, Brent R. Matzelle                                |
 | ------------------------------------------------------------------------- |
 |   License: Distributed under the Lesser General Public License (LGPL)     |
-|            http://www.gnu.org/copyleft/lesser.html                        |
+|            https://www.gnu.org/copyleft/lesser.html                        |
 | This program is distributed in the hope that it will be useful - WITHOUT  |
 | ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
 | FITNESS FOR A PARTICULAR PURPOSE.                                         |
@@ -2367,7 +2367,7 @@ class phpmailerException extends Exception {
  * @copyright 2004 - 2008 Andy Prevost
  * @author Jim Jagielski
  * @copyright 2010 - 2012 Jim Jagielski
- * @license http://www.gnu.org/copyleft/lesser.html Distributed under the Lesser General Public License (LGPL)
+ * @license https://www.gnu.org/copyleft/lesser.html Distributed under the Lesser General Public License (LGPL)
  */
 
 /**
@@ -2701,8 +2701,8 @@ class SMTP {
          * ntlm_sasl_client.php
          ** Bundled with Permission
          **
-         ** How to telnet in windows: http://technet.microsoft.com/en-us/library/aa995718%28EXCHG.65%29.aspx
-         ** PROTOCOL Documentation http://curl.haxx.se/rfc/ntlm.html#ntlmSmtpAuthentication
+         ** How to telnet in windows: https://technet.microsoft.com/en-us/library/aa995718%28EXCHG.65%29.aspx
+         ** PROTOCOL Documentation https://curl.haxx.se/rfc/ntlm.html#ntlmSmtpAuthentication
          */
         require_once 'extras/ntlm_sasl_client.php';
         $temp = new stdClass();
@@ -2810,7 +2810,7 @@ class SMTP {
           return hash_hmac('md5', $data, $key);
       }
 
-      // The following borrowed from http://php.net/manual/en/function.mhash.php#27225
+      // The following borrowed from https://php.net/manual/en/function.mhash.php#27225
 
       // RFC 2104 HMAC implementation for php.
       // Creates an md5 HMAC.
