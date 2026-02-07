@@ -23,10 +23,19 @@ const mouseEvent = e => {
     }
 };
 
-if (!CookieService.getCookie('exitIntentShown')) {
-    setTimeout(() => {
+function getCookie(name) {
+    return document.cookie.split('; ').find(row => row.startsWith(name + '='));
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (!getCookie('exitIntentShown')) {
         document.addEventListener('mouseout', mouseEvent);
         document.addEventListener('keydown', exit);
-        document.querySelector('.exit-intent-popup').addEventListener('click', exit);
-    }, 0);
-}
+
+        const popup = document.querySelector('.exit-intent-popup');
+        if (popup) {
+            popup.addEventListener('click', exit);
+        }
+    }
+});
+
