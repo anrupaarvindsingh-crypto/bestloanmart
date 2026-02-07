@@ -13,7 +13,9 @@
     <meta name="description" content="Pylon Loan HTML Template">
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
@@ -45,8 +47,8 @@
                             <a href="#" class="fab fa-pinterest-p"></a>
                             <a href="#" class="fab fa-instagram"></a> -->
                         </div><!-- /.topbar__social -->
-                        
-                        
+
+
                         <!-- <a href="news.html">Company News</a>
                         <a href="faq.html">FAQs</a> -->
                     </div><!-- /.topbar__left -->
@@ -59,7 +61,8 @@
             <nav class="main-menu">
                 <div class="container">
                     <div class="logo-box">
-                        <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155" height="50" alt=""></a>
+                        <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155"
+                                height="50" alt=""></a>
                         <span class="fa fa-bars mobile-nav__toggler"></span>
                     </div><!-- /.logo-box -->
                     <ul class="main-menu__list">
@@ -87,7 +90,7 @@
                             </ul>
                         </li>
                         <!-- <li class="dropdown"><a href="services.html">Service</a> -->
-                            <!-- <ul>
+                        <!-- <ul>
                                 <li><a href="services.html">Service</a></li>
                                 <!-- <li><a href="services-2.html">Service Two</a></li> 
                                 <li><a href="service-details.html">Service Details</a></li>
@@ -144,7 +147,8 @@
         </div><!-- /.stricky-header -->
 
         <section class="page-header">
-            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+            <div class="page-header__bg"
+                style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
             <!-- /.page-header__bg -->
             <div class="container">
                 <ul class="thm-breadcrumb list-unstyled">
@@ -190,42 +194,61 @@
                         </div><!-- /.contact-one__content -->
                     </div><!-- /.col-lg-5 -->
                     <div class="col-lg-7">
-                        <form id="contactform1" action="contact.php" method="post" class="contact-one__form">
-                            <div class="row low-gutters">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Name" class="form-control contact-one__form-input" id="name" name="name" required>
+                        <!-- <form id="contactform1" action="contact.php" method="post" class="contact-one__form"> -->
+                        <form id="contactform1" name="contact" method="POST" data-netlify="true" action="thank-you.html"
+                            class="contact-one__form">
+                            <form id="contactform1" name="contact" method="POST" data-netlify="true"
+                                action="thank-you.html" class="contact-one__form">
+
+                                <input type="hidden" name="form-name" value="contact">
+
+                                <div class="row low-gutters">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Your Name"
+                                                class="form-control contact-one__form-input" name="name" required>
+                                        </div>
                                     </div>
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" placeholder="Your Email" class="form-control contact-one__form-input" id="email" name="email" required>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" placeholder="Your Email"
+                                                class="form-control contact-one__form-input" name="email" required>
+                                        </div>
                                     </div>
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Phone Number" class="form-control contact-one__form-input" id="phone" name="phone">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Phone Number"
+                                                class="form-control contact-one__form-input" name="phone">
+                                        </div>
                                     </div>
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Subject" class="form-control contact-one__form-input" id="subject" name="subject">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Subject"
+                                                class="form-control contact-one__form-input" name="subject">
+                                        </div>
                                     </div>
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" placeholder="Write Message" id="Message" class="contact-one__form-input"></textarea>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" placeholder="Write Message"
+                                                class="contact-one__form-input" required></textarea>
+                                        </div>
+                                        <button class="thm-btn" type="submit">Send A Message</button>
                                     </div>
-                                    <button class="thm-btn" type="submit">Send A Message</button>
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-                        </form><!-- /.contact-one__from -->
+                                </div>
+                            </form>
+
                     </div><!-- /.col-lg-7 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.contact-one -->
         <div class="google-map__home-two">
-            <iframe title="template google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.6304701413715!2d77.07736261492208!3d28.580857182438297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b6cad2ca197%3A0x189cf7f03001cd66!2sRZH%20849%2C%20Street%20Number%2014%2C%20Block%20H%2C%20Block%20B%2C%20Raj%20Nagar%20II%20Extension%2C%20Raj%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110077!5e0!3m2!1sen!2sin!4v1638101620453!5m2!1sen!2sin" class="map__home-two" allowfullscreen></iframe>
+            <iframe title="template google map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.6304701413715!2d77.07736261492208!3d28.580857182438297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b6cad2ca197%3A0x189cf7f03001cd66!2sRZH%20849%2C%20Street%20Number%2014%2C%20Block%20H%2C%20Block%20B%2C%20Raj%20Nagar%20II%20Extension%2C%20Raj%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110077!5e0!3m2!1sen!2sin!4v1638101620453!5m2!1sen!2sin"
+                class="map__home-two" allowfullscreen></iframe>
         </div><!-- /.google-map -->
         <footer class="site-footer">
             <div class="container">
@@ -235,7 +258,8 @@
                             <a href="index.html">
                                 <img src="assets/images/logo_new.png" width="155" alt="">
                             </a>
-                            <p>Welcome to Best loan Mart loan company we are provide loan as very reasonably interest and you can provide document etur labore.</p>
+                            <p>Welcome to Best loan Mart loan company we are provide loan as very reasonably interest
+                                and you can provide document etur labore.</p>
                             <div class="footer-widget__about-phone">
                                 <i class="pylon-icon-tech-support"></i>
                                 <div class="footer-widget__about-phone-content">
@@ -250,22 +274,24 @@
                             <h3 class="footer-widget__title">Explore</h3>
                             <ul class="list-unstyled footer-widget__link-list">
                                 <li><a href="team.html"><i class="fa fa-arrow-right"></i>About</a></li>
-                                <li><a href="loan-calculator.html"><i class="fa fa-arrow-right"></i>Loan Calculator</a></li>
+                                <li><a href="loan-calculator.html"><i class="fa fa-arrow-right"></i>Loan Calculator</a>
+                                </li>
                                 <!-- <li><a href="news.html"><i class="fa fa-arrow-right"></i>Latest News</a></li> -->
                                 <!-- <li><a href="testimonials.html"><i class="fa fa-arrow-right"></i>Testimonials</a></li> -->
                                 <li><a href="apply-now.html"><i class="fa fa-arrow-right"></i>Apply Now</a></li>
                                 <li><a href="contact.html"><i class="fa fa-arrow-right"></i>Contact Us</a></li>
-                                
+
                             </ul><!-- /.list-unstyled -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-lg-2 -->
-                   
+
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer-widget footer-widget__contact">
                             <h3>Contact</h3>
                             <ul class="list-unstyled footer-widget__contact-list">
                                 <li>
-                                    <a href="mailto:care@bestloanmart.in"><i class="pylon-icon-email1"></i>care@bestloanmart.in</a>
+                                    <a href="mailto:care@bestloanmart.in"><i
+                                            class="pylon-icon-email1"></i>care@bestloanmart.in</a>
                                 </li>
                                 <li>
                                     <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 9:00 AM - 6:00 PM</a>
@@ -301,7 +327,8 @@
             <span class="mobile-nav__close mobile-nav__toggler"></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155" alt="" /></a>
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155"
+                        alt="" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -320,7 +347,8 @@
             <div class="mobile-nav__top">
                 <div class="mobile-nav__language">
                     <img src="assets/images/resources/flag-1-1.jpg" alt="">
-                    <label class="sr-only" for="language-select">select language</label><!-- /#language-select.sr-only -->
+                    <label class="sr-only" for="language-select">select
+                        language</label><!-- /#language-select.sr-only -->
                     <select class="selectpicker" id="language-select">
                         <option value="english">English</option>
                         <option value="arabic">Arabic</option>
@@ -372,9 +400,9 @@
     <script src="assets/js/jquery.appear.min.js"></script>
     <script src="assets/js/wNumb.min.js"></script>
     <script src="assets/js/nouislider.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>	
-	
-	
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -384,4 +412,5 @@
     <!-- template js -->
     <script src="assets/js/theme.js"></script>
 </body>
+
 </html>
