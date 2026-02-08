@@ -1,5 +1,5 @@
 <?php 
-$to = 'care@bestloanmart.in'; // Put in your email address here
+$to = 'care@bestloanmart.com'; // Put in your email address here
 $subject  = "Contact Us Form"; // The default subject. Will appear by default in all messages. Change this if you want.
 $from = 'info@bestloanmart.in'; 
 // User info (DO NOT EDIT!)
@@ -34,14 +34,14 @@ $msg = '<table>
 //$mail = @mail($to, $subject, $msg, "From: info@bestloanmart.in");  // This command sends the e-mail to the e-mail address contained in the $to variable
 ini_set('SMTP', 'smtpout.secureserver.net');
 ini_set('smtp_port', 465);
-ini_set('sendmail_from', 'care@bestloanmart.in');
+ini_set('sendmail_from', 'care@bestloanmart.com');
 
 // Recipient email address
-$to = 'care@bestloanmart.in';
+$to = 'care@bestloanmart.com';
 
 // Additional headers
-$headers = "From: care@bestloanmart.in" . "\r\n";
-$headers .= "Reply-To: care@bestloanmart.in" . "\r\n";
+$headers = "From: care@bestloanmart.com" . "\r\n";
+$headers .= "Reply-To: care@bestloanmart.com" . "\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 $headers .= "MIME-Version: 1.0" . "\r\n"; 
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
