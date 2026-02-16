@@ -404,26 +404,34 @@
     <script src="assets/js/app.js" defer></script>
     <!-- template js -->
     <script src="assets/js/theme.js"></script>
-    <!-- EmailJS Script -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-    <script>
-        (function () {
-            emailjs.init("AjK0E85BRkbFAI9Dw");
-        })();
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-            e.preventDefault();
+    emailjs.init("AjK0E85BRkbFAI9Dw");
 
-            emailjs.sendForm("service_qi78bzh", "template_9cf560l", this)
-                .then(function () {
-                    window.location.href = "thank-you.html";
-                }, function (error) {
-                    alert("Failed to send message. Please try again.");
-                    console.log(error);
-                });
-        });
-    </script>
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_os60kji", "template_9cf560l", form)
+            .then(function () {
+                window.location.href = "thank-you.html";
+            })
+            .catch(function (error) {
+                console.log(error);
+                alert("Failed to send message. Please try again.");
+            });
+    });
+
+});
+</script>
+
+
 
 </body>
 
