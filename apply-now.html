@@ -12,7 +12,9 @@
     <meta name="description" content="Pylon Loan HTML Template">
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
@@ -29,12 +31,16 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
         .contact-one__form-box {
-	margin-top: 0px;
-}.apply-one {
-	padding: 10px 0px;
-}.contact-one__form-submit {
-	margin-bottom: 40px;
-}
+            margin-top: 0px;
+        }
+
+        .apply-one {
+            padding: 10px 0px;
+        }
+
+        .contact-one__form-submit {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 
@@ -53,8 +59,8 @@
                             <a href="#" class="fab fa-pinterest-p"></a>
                             <a href="#" class="fab fa-instagram"></a> -->
                         </div><!-- /.topbar__social -->
-                        
-                        
+
+
                         <!-- <a href="news.html">Company News</a>
                         <a href="faq.html">FAQs</a> -->
                     </div><!-- /.topbar__left -->
@@ -67,7 +73,8 @@
             <nav class="main-menu">
                 <div class="container">
                     <div class="logo-box">
-                        <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155" height="50" alt=""></a>
+                        <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155"
+                                height="50" alt=""></a>
                         <span class="fa fa-bars mobile-nav__toggler"></span>
                     </div><!-- /.logo-box -->
                     <ul class="main-menu__list">
@@ -95,7 +102,7 @@
                             </ul>
                         </li>
                         <!-- <li class="dropdown"><a href="services.html">Service</a> -->
-                            <!-- <ul>
+                        <!-- <ul>
                                 <li><a href="services.html">Service</a></li>
                                 <!-- <li><a href="services-2.html">Service Two</a></li> 
                                 <li><a href="service-details.html">Service Details</a></li>
@@ -152,7 +159,8 @@
         </div><!-- /.stricky-header -->
 
         <section class="page-header">
-            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+            <div class="page-header__bg"
+                style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
             <!-- /.page-header__bg -->
             <div class="container">
                 <ul class="thm-breadcrumb list-unstyled">
@@ -163,14 +171,14 @@
                 <h2>Apply Now</h2>
             </div><!-- /.container -->
         </section><!-- /.page-header -->
-        
+
 
         <section class="apply-one">
             <div class="container">
                 <div class="alert"></div>
-                <form name="applyloan" method="POST" data-netlify="true" action="thank-you.html" class="contact-one__form">
-                    <input type="hidden" name="form-name" value="applyloan">
-                <!-- <form id="contactform2" action="apply-now.php" method="post" class="contact-one__form"> -->
+                <form id="applyLoanForm" class="contact-one__form">
+                   <input type="hidden" name="form_type" value="Apply Loan">
+                    <!-- <form id="contactform2" action="apply-now.php" method="post" class="contact-one__form"> -->
                     <div class="contact-one__form-box">
                         <div class="row">
                             <div class="col-md-12">
@@ -185,13 +193,16 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Loan Amount*</label>
-                                    <input type="number" id ="loan_amt" name="loanamount" class="form-control contact-one__form-input" placeholder="Loan Amount" required>
+                                    <input type="number" id="loan_amt" name="loanamount"
+                                        class="form-control contact-one__form-input" placeholder="Loan Amount" required>
                                 </div><!-- /.form-group-->
                             </div><!-- /.col-md-6-->
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Monthly Income*</label>
-                                    <input type="number" name="income" id ="income" class="form-control contact-one__form-input" placeholder="Monthly Income" required>
+                                    <input type="number" name="income" id="income"
+                                        class="form-control contact-one__form-input" placeholder="Monthly Income"
+                                        required>
                                 </div><!-- /.form-group-->
                             </div><!-- /.col-md-6-->
                         </div><!-- /.row-->
@@ -213,7 +224,7 @@
                                     </select>
                                 </div><!-- /.form-group--
                             </div><!-- /.col-md-6-->
-                            <!--<div class="col-md-6">
+                        <!--<div class="col-md-6">
                                 <div class="form-group">
                                     <label>Loan Years</label>
                                     <select id="loanyears" name="loanyears" class="contact-one__form-input custom-select" required>
@@ -240,45 +251,51 @@
                         </div><!-- /.row--
                     </div><!-- /.contact-one__form-box-->
 
-                    <div class="contact-one__form-box">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="block-title">
-                                    <p class="small-title">Ask for More Details</p>
-                                    <h2 class="title-block">Personal Details</h2>
-                                </div><!-- /.block-title-->
-                            </div><!-- /.col-md-12-->
-                        </div><!-- /.row-->
+                        <div class="contact-one__form-box">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="block-title">
+                                        <p class="small-title">Ask for More Details</p>
+                                        <h2 class="title-block">Personal Details</h2>
+                                    </div><!-- /.block-title-->
+                                </div><!-- /.col-md-12-->
+                            </div><!-- /.row-->
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Full Name <strong>[as per Taxpayer ID]</strong></label>
-                                    <input type="text" id ="name" name="yourname" class="form-control contact-one__form-input" placeholder="Full Name" required>
-                                </div><!-- /.form-group-->
-                            </div><!-- /.col-md-6-->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Email*</label>
-                                    <input type="email" id ="email" name="your-email" class="form-control contact-one__form-input" placeholder="Your Email" required>
-                                </div><!-- /.form-group-->
-                            </div><!-- /.col-md-6-->
-                             <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Birth Date* <strong>[as per Taxpayer ID]</strong></label>
-                                    <input type="text" name="birthdate" id ="birthdate" class="form-control contact-one__form-input" placeholder="Birth Date" required>
-                                </div><!-- /.form-group-->
-                            </div>
-                        </div><!-- /.row-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Full Name <strong>[as per Taxpayer ID]</strong></label>
+                                        <input type="text" id="name" name="yourname"
+                                            class="form-control contact-one__form-input" placeholder="Full Name"
+                                            required>
+                                    </div><!-- /.form-group-->
+                                </div><!-- /.col-md-6-->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Email*</label>
+                                        <input type="email" id="email" name="your-email"
+                                            class="form-control contact-one__form-input" placeholder="Your Email"
+                                            required>
+                                    </div><!-- /.form-group-->
+                                </div><!-- /.col-md-6-->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Birth Date* <strong>[as per Taxpayer ID]</strong></label>
+                                        <input type="text" name="birthdate" id="birthdate"
+                                            class="form-control contact-one__form-input" placeholder="Birth Date"
+                                            required>
+                                    </div><!-- /.form-group-->
+                                </div>
+                            </div><!-- /.row-->
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <!--<div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!--<div class="form-group">
                                     <label>Mobile Number*</label>
                                     <input type="number" name="phonenumber" class="form-control contact-one__form-input" placeholder="Mobile Number" required>
                                 </div><!-- /.form-group-->
-                            </div><!-- /.col-md-6-->
-                            <!--<div class="col-md-6">
+                                </div><!-- /.col-md-6-->
+                                <!--<div class="col-md-6">
                                 <div class="form-group">
                                     <label>Marital Status*</label>
                                     <select name="martialstatus" class="contact-one__form-input custom-select" required>
@@ -293,12 +310,12 @@
                                         <option value="Partner">Partner</option>
                                     </select>
                                 </div><!-- /.form-group-
-                            </div><!-- /.col-md-6-->                            
-                        </div><!-- /.row-->
+                            </div><!-- /.col-md-6-->
+                            </div><!-- /.row-->
 
-                        <div class="row">
-                           <!-- /.col-md-6-->
-                            <!--<div class="col-md-6">
+                            <div class="row">
+                                <!-- /.col-md-6-->
+                                <!--<div class="col-md-6">
                                 <div class="form-group">
                                     <label>Number Of Dependents*</label>
                                     <select name="numberofdependents" class="contact-one__form-input custom-select" required>
@@ -311,13 +328,13 @@
                                         
                                     </select>
                                 </div><!-- /.form-group--
-                            </div><!-- /.col-md-6-->                            
-                        </div><!-- /.row-->
-                    </div><!-- /.contact-one__form-box-->
+                            </div><!-- /.col-md-6-->
+                            </div><!-- /.row-->
+                        </div><!-- /.contact-one__form-box-->
 
 
-                    <div class="contact-one__form-box">
-                        <!--<div class="row">
+                        <div class="contact-one__form-box">
+                            <!--<div class="row">
                             <div class="col-md-12">
                                 <div class="block-title">
                                     <p class="small-title">Street, City And State</p>
@@ -326,82 +343,89 @@
                             </div><!-- /.col-md-12--
                         </div><!-- /.row-->
 
-                        <div class="row">
-                            <!--<div class="col-md-4">
+                            <div class="row">
+                                <!--<div class="col-md-4">
                                 <div class="form-group">
                                     <label>House No/Name*</label>
                                     <input type="text" name="house-no" class="form-control contact-one__form-input" placeholder="House Number/Name" required>
                                 </div><!-- /.form-group-
                             </div><!-- /.col-md-4-->
 
-                            <!--<div class="col-md-4">
+                                <!--<div class="col-md-4">
                                 <div class="form-group">
                                     <label>Street*</label>
                                     <input type="text" name="street" class="form-control contact-one__form-input" placeholder="Street" required>
                                 </div><!-- /.form-group--
                             </div><!-- /.col-md-4-->
 
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>City*</label>
-                                    <input type="text" name="city" id ="city" class="form-control contact-one__form-input" placeholder="City" required>
-                                </div><!-- /.form-group-->
-                            </div><!-- /.col-md-4-->
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Pin Code*</label>
-                                    <input type="number" name="pin" id ="pincode" class="form-control contact-one__form-input" placeholder="Pin Code" required>
-                                </div><!-- /.form-group-->
-                            </div><!-- /.col-md-4-->
-                        </div><!-- /.row-->
-                        <div class="contact-one__form-box">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="block-title">
-                                        <p class="small-title">Employment and other stuff</p>
-                                        <h2 class="title-block">Other Details</h2>
-                                    </div><!-- /.block-title-->
-                                </div><!-- /.col-md-12-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>City*</label>
+                                        <input type="text" name="city" id="city"
+                                            class="form-control contact-one__form-input" placeholder="City" required>
+                                    </div><!-- /.form-group-->
+                                </div><!-- /.col-md-4-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pin Code*</label>
+                                        <input type="number" name="pin" id="pincode"
+                                            class="form-control contact-one__form-input" placeholder="Pin Code"
+                                            required>
+                                    </div><!-- /.form-group-->
+                                </div><!-- /.col-md-4-->
+                            </div><!-- /.row-->
+                            <div class="contact-one__form-box">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="block-title">
+                                            <p class="small-title">Employment and other stuff</p>
+                                            <h2 class="title-block">Other Details</h2>
+                                        </div><!-- /.block-title-->
+                                    </div><!-- /.col-md-12-->
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <!--<div class="col-md-4">
+                            <div class="row">
+                                <!--<div class="col-md-4">
                                 <div class="form-group">
                                     <label>State*</label>
                                     <input type="text" name="state" class="form-control contact-one__form-input" placeholder="State" required>
                                 </div><!-- /.form-group--
                             </div><!-- /.col-md-4-->
 
-                            <!--<div class="col-md-4">
+                                <!--<div class="col-md-4">
                                 <div class="form-group">
                                     <label>Country*</label>
                                     <input type="text" name="country" class="form-control contact-one__form-input" placeholder="Country" required>
                                 </div><!-- /.form-group--
                             </div><!-- /.col-md-4-->
 
-                            
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Employment Industry*</label>
-                                    <input type="text" name="employmentindustry" id ="employmentindustry" class="form-control contact-one__form-input" placeholder="Government/Private" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Contact Number*</label>
-                                    <input type="number" name="worknumber" id ="worknumber" class="form-control contact-one__form-input" placeholder="Work Phone Number" required>
-                                </div><!-- /.form-group-->
-                            </div><!-- /.col-md-4-->
-                        </div><!-- /.row-->
-                    </div><!-- /.contact-one__form-box-->
 
-                    <div class="contact-one__form-submit">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <input type="submit" value="Submit" class="thm-btn">
-                            </div><!--/.col-md-12-->
-                        </div><!--/.row-->
-                    </div><!--/.contact-one__form-submit-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Employment Industry*</label>
+                                        <input type="text" name="employmentindustry" id="employmentindustry"
+                                            class="form-control contact-one__form-input"
+                                            placeholder="Government/Private" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Contact Number*</label>
+                                        <input type="number" name="worknumber" id="worknumber"
+                                            class="form-control contact-one__form-input" placeholder="Work Phone Number"
+                                            required>
+                                    </div><!-- /.form-group-->
+                                </div><!-- /.col-md-4-->
+                            </div><!-- /.row-->
+                        </div><!-- /.contact-one__form-box-->
+
+                        <div class="contact-one__form-submit">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" value="Submit" class="thm-btn">
+                                </div><!--/.col-md-12-->
+                            </div><!--/.row-->
+                        </div><!--/.contact-one__form-submit-->
 
                 </form><!-- /.contact-one__form-->
             </div><!-- /.container-->
@@ -416,7 +440,8 @@
                             <a href="index.html">
                                 <img src="assets/images/logo_new.png" width="155" alt="">
                             </a>
-                            <p>Welcome to Best loan Mart loan company we are provide loan as very reasonably interest and you can provide document etur labore.</p>
+                            <p>Welcome to Best loan Mart loan company we are provide loan as very reasonably interest
+                                and you can provide document etur labore.</p>
                             <div class="footer-widget__about-phone">
                                 <i class="pylon-icon-tech-support"></i>
                                 <div class="footer-widget__about-phone-content">
@@ -431,22 +456,24 @@
                             <h3 class="footer-widget__title">Explore</h3>
                             <ul class="list-unstyled footer-widget__link-list">
                                 <li><a href="team.html"><i class="fa fa-arrow-right"></i>About</a></li>
-                                <li><a href="loan-calculator.html"><i class="fa fa-arrow-right"></i>Loan Calculator</a></li>
+                                <li><a href="loan-calculator.html"><i class="fa fa-arrow-right"></i>Loan Calculator</a>
+                                </li>
                                 <!-- <li><a href="news.html"><i class="fa fa-arrow-right"></i>Latest News</a></li> -->
                                 <!-- <li><a href="testimonials.html"><i class="fa fa-arrow-right"></i>Testimonials</a></li> -->
                                 <li><a href="apply-now.html"><i class="fa fa-arrow-right"></i>Apply Now</a></li>
                                 <li><a href="contact.html"><i class="fa fa-arrow-right"></i>Contact Us</a></li>
-                                
+
                             </ul><!-- /.list-unstyled -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-lg-2 -->
-                   
+
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer-widget footer-widget__contact">
                             <h3>Contact</h3>
                             <ul class="list-unstyled footer-widget__contact-list">
                                 <li>
-                                    <a href="mailto:care@bestloanmart.com"><i class="pylon-icon-email1"></i>care@bestloanmart.com</a>
+                                    <a href="mailto:care@bestloanmart.com"><i
+                                            class="pylon-icon-email1"></i>care@bestloanmart.com</a>
                                 </li>
                                 <li>
                                     <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 9:00 AM - 6:00 PM</a>
@@ -481,7 +508,8 @@
             <span class="mobile-nav__close mobile-nav__toggler"></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155" alt="" /></a>
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo_new.png" width="155"
+                        alt="" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -500,7 +528,8 @@
             <div class="mobile-nav__top">
                 <div class="mobile-nav__language">
                     <img src="assets/images/resources/flag-1-1.jpg" alt="">
-                    <label class="sr-only" for="language-select">select language</label><!-- /#language-select.sr-only -->
+                    <label class="sr-only" for="language-select">select
+                        language</label><!-- /#language-select.sr-only -->
                     <select class="selectpicker" id="language-select">
                         <option value="english">English</option>
                         <option value="arabic">Arabic</option>
@@ -558,5 +587,35 @@
 
     <!-- template js -->
     <script src="assets/js/theme.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  // ✅ Put your PUBLIC KEY here (not service id)
+  (function () {
+    emailjs.init("AjK0E85BRkbFAI9Dw");
+  })();
+
+  document
+    .getElementById("applyLoanForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "service_os60kji",     // ✅ your service id
+          "template_9cf560l",    // ✅ your template id
+          this                   // ✅ IMPORTANT FIX
+        )
+        .then(function () {
+          window.location.href = "thank-you.html";
+        })
+        .catch(function (error) {
+          console.error(error);
+          alert("Failed to send ❌");
+        });
+    });
+</script>
 </body>
+
 </html>

@@ -195,6 +195,7 @@
                     </div><!-- /.col-lg-5 -->
                     <div class="col-lg-7">
                         <form id="contact-form" class="contact-one__form">
+                            <input type="hidden" name="form_type" value="Contact Form">
                             <div class="row low-gutters">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -229,7 +230,9 @@
                                         <textarea name="message" placeholder="Write Message"
                                             class="contact-one__form-input" required></textarea>
                                     </div>
-                                    <button class="thm-btn" type="submit">Send A Message</button>
+                                    <button id="contactSubmitBtn" class="thm-btn" type="submit">
+                                        Send A Message
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -406,32 +409,42 @@
     <script src="assets/js/theme.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+  (function () {
+     emailjs.init("AjK0E85BRkbFAI9Dw");
+  })();
 
-    emailjs.init("AjK0E85BRkbFAI9Dw");
+  const contactForm = document.getElementById("contact-form");
+  const btn = document.getElementById("contactSubmitBtn");
 
-    const form = document.getElementById("contact-form");
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+    btn.disabled = true;
+    btn.innerText = "Sending...";
 
-        emailjs.sendForm("service_os60kji", "template_9cf560l", form)
-            .then(function () {
-                window.location.href = "thank-you.html";
-            })
-            .catch(function (error) {
-                console.log(error);
-                alert("Failed to send message. Please try again.");
-            });
-    });
-
-});
+    emailjs
+      .sendForm(
+        "service_jr99qro",   // ✅ your service id
+        "template_9cf560l",  // ✅ your template id
+        this
+      )
+      .then(function () {
+        alert("Message sent successfully ✅");
+        contactForm.reset();
+      })
+      .catch(function (error) {
+        console.error(error);
+        alert("Failed to send ❌");
+      })
+      .finally(() => {
+        btn.disabled = false;
+        btn.innerText = "Send A Message";
+      });
+  });
 </script>
-
-
 
 </body>
 
