@@ -432,8 +432,10 @@
         this
       )
       .then(function () {
-        alert("Message sent successfully ✅");
-        contactForm.reset();
+       form.reset();
+        setTimeout(() => {
+            window.location.href = "thank-you.html";
+        }, 300);
       })
       .catch(function (error) {
         console.error(error);

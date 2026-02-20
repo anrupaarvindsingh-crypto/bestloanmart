@@ -608,7 +608,10 @@
           this                   // ✅ IMPORTANT FIX
         )
         .then(function () {
-          window.location.href = "thank-you.html";
+          form.reset();
+            setTimeout(() => {
+                window.location.href = "thank-you.html";
+            }, 300);
         })
         .catch(function (error) {
           console.error(error);
