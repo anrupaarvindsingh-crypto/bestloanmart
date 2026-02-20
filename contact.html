@@ -413,7 +413,7 @@
 
 <script>
   (function () {
-     emailjs.init("AjK0E85BRkbFAI9Dw");
+    emailjs.init("AjK0E85BRkbFAI9Dw");
   })();
 
   const contactForm = document.getElementById("contact-form");
@@ -427,15 +427,13 @@
 
     emailjs
       .sendForm(
-        "service_jr99qro",   // ✅ your service id
-        "template_9cf560l",  // ✅ your template id
+        "service_jr99qro",
+        "template_9cf560l",
         this
       )
-      .then(function () {
-       form.reset();
-        setTimeout(() => {
-            window.location.href = "thank-you.html";
-        }, 300);
+      .then(() => {
+        contactForm.reset();
+        window.location.href = "thank-you.html";
       })
       .catch(function (error) {
         console.error(error);
