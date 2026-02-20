@@ -603,15 +603,13 @@
 
       emailjs
         .sendForm(
-          "service_os60kji",     // ✅ your service id
+          "service_jr99qro",     // ✅ your service id
           "template_9cf560l",    // ✅ your template id
           this                   // ✅ IMPORTANT FIX
         )
         .then(function () {
-          form.reset();
-            setTimeout(() => {
-                window.location.href = "thank-you.html";
-            }, 300);
+            form.reset();
+            window.location.href = "thank-you.html";
         })
         .catch(function (error) {
           console.error(error);
