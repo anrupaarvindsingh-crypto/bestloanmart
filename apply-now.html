@@ -600,7 +600,7 @@
     .getElementById("applyLoanForm")
     .addEventListener("submit", function (e) {
       e.preventDefault();
-
+        const form = this; // ✅ MUST ADD
       emailjs
         .sendForm(
           "service_jr99qro",     // ✅ your service id
